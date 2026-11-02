@@ -32,3 +32,21 @@ object epocaSeca {
 object epocaDeLluvia {
   method sePuedeSembrar() = false
 }
+
+class SiembraEnTerraza inherits Siembra{
+  override method horasDeJornadaNormal() = 6
+
+  override  method recursosProducidos(tiempo) = super(tiempo) * 3
+}
+
+class Mensaje inherits Tarea {
+   override method esfuerzo() = 1.4
+
+   override method desgaste(tiempo) = tiempo/4
+}
+
+class MensajeImperial inherits Mensaje{
+   override method esfuerzo() = 1.8
+
+   override method desgaste(tiempo) = (super(tiempo) / 2).min(1)
+}
