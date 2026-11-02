@@ -48,5 +48,5 @@ class Mensaje inherits Tarea {
 class MensajeImperial inherits Mensaje{
    override method esfuerzo() = 1.8
 
-   override method desgaste(tiempo) = (super(tiempo) / 2).min(1)
+   override method desgaste(tiempo) = (super(tiempo) - 2).max(1)
 }

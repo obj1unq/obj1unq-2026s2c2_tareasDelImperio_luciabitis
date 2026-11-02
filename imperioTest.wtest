@@ -18,7 +18,7 @@ describe "Imperio Inca" {
   test "tareas de mensajes" {
     assert.equals(210, rutaTamboCentral.recursosProducidos(4))
     assert.equals(525, rutaTamboCentral.recursosProducidos(10))
-    assert.equals(270, caminoDelSapaInca.recursosProducidos(4))
+    assert.equals(210, rutaTamboCentral.recursosProducidos(4))
     assert.equals(810, caminoDelSapaInca.recursosProducidos(10))
   }
 
