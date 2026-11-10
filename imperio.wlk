@@ -50,3 +50,4 @@ class MensajeImperial inherits Mensaje{
 
    override method desgaste(tiempo) = (super(tiempo) - 2).max(1)
 }
+
